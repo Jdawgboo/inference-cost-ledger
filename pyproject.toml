@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inference-cost-ledger"
+version = "0.1.0"
+description = "Offline inference usage and cost aggregation"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+inference-cost-ledger = "inference_cost_ledger:main"
+
+[tool.setuptools]
+py-modules = ["inference_cost_ledger"]
+package-dir = {"" = "src"}
